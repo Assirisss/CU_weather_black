@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ввод данных</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .left {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right {
+            width: 65%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 22%;
+        }
+
+        .item {
+            margin: 5px 0;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .header {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Заголовок для текущей погоды -->
+
+    <h2>Текущая погода в городе отправления -- {{depart_city}}</h2>
+
+
+    <div class="container">
+        <!-- Левая часть -->
+        <div class="left">
+            <h3>{{ left_title1 }}</h3>
+            <div class="item">{{ left_item1 }}</div>
+            <div class="item">{{ left_item2 }}</div>
+            <div class="item">{{ left_item3 }}</div>
+            <div class="item">{{ left_item4 }}</div>
+            <div class="item">{{ left_item5 }}</div>
+        </div>
+    </div>
+
+    <!-- Заголовок для предсказания погоды -->
+
+    <h2>Предсказание погоды в городе прибытия -- {{arrived_city}}</h2>
+
+
+    <div class="container">
+        <div class="right">
+            <div class="section">
+                <h3>{{ right_title1 }}</h3>
+                <div class="item">{{ right_item1_1 }}</div>
+                <div class="item">{{ right_item1_2 }}</div>
+                <div class="item">{{ right_item1_3 }}</div>
+                <div class="item">{{ right_item1_4 }}</div>
+                <div class="item">{{ right_item1_5 }}</div>
+            </div>
+            <div class="section">
+                <h3>{{ right_title2 }}</h3>
+                <div class="item">{{ right_item2_1 }}</div>
+                <div class="item">{{ right_item2_2 }}</div>
+                <div class="item">{{ right_item2_3 }}</div>
+                <div class="item">{{ right_item2_4 }}</div>
+                <div class="item">{{ right_item2_5 }}</div>
+            </div>
+            <div class="section">
+                <h3>{{ right_title3 }}</h3>
+                <div class="item">{{ right_item3_1 }}</div>
+                <div class="item">{{ right_item3_2 }}</div>
+                <div class="item">{{ right_item3_3 }}</div>
+                <div class="item">{{ right_item3_4 }}</div>
+                <div class="item">{{ right_item3_5 }}</div>
+            </div>
+            <div class="section">
+                <h3>{{ right_title4 }}</h3>
+                <div class="item">{{ right_item4_1 }}</div>
+                <div class="item">{{ right_item4_2 }}</div>
+                <div class="item">{{ right_item4_3 }}</div>
+                <div class="item">{{ right_item4_4 }}</div>
+                <div class="item">{{ right_item4_5 }}</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
